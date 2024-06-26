@@ -14,8 +14,16 @@ QUIL=${QUIL%QUIL*}
 
 Ver=${api_keyA#*Version: }
 Ver=${Ver%Max*}
+
+timestamp=$(date +%s)
+#echo $timestamp
+
+benjina=$(hostname)
+
 # 使用变量构建URL
-url="http://192.168.0.102:7001/ip=$api_key----$QUIL----$Ver"
+#urll='{"name":"'"$benjina"'","id":"'"$api_key"'","quil":"'"$QUIL"'","ver":"'"$Ver"'","time":"'"$timestamp"'"}'
+#url="http://192.168.1.107:7001/ip=$urll"
+url="http://192.168.1.107:7001/ip=$benjina----$api_key----$QUIL----$Ver----$timestamp"
 #echo $url
 
 
