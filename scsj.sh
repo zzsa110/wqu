@@ -23,7 +23,7 @@ benjina=$(hostname)
 # 使用变量构建URL
 #urll='{"name":"'"$benjina"'","id":"'"$api_key"'","quil":"'"$QUIL"'","ver":"'"$Ver"'","time":"'"$timestamp"'"}'
 #url="http://192.168.1.107:7001/ip=$urll"
-url="http://192.168.1.107:7001/ip=$benjina----$api_key----$QUIL----$Ver----$timestamp"
+url="http://192.168.1.251:7001/ip=$benjina----$api_key----$QUIL----$Ver----$timestamp"
 #echo $url
 
 
