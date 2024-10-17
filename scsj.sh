@@ -1,7 +1,7 @@
 #!/bin/bash
  
 # 定义变量
-api_keyA="$(cd ~/ceremonyclient/node && sudo ./node-1.4.20-linux-amd64 -node-info)"
+api_keyA="$(cd ~/ceremonyclient/node && sudo ./node-2.0.0.7-linux-amd64 -node-info)"
 
 
 api_key=${api_keyA#*ID: }
